@@ -10,6 +10,9 @@ st.image("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?ixlib=rb-
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
 # 3 x 4 (row, col)
 # 열을 배치하는 메소드
+
+tabs = st.tabs(["참가자"])
+
 columns = st.columns(4)
 # col1, col2, col3, col4
 for idx, col in enumerate(columns):
