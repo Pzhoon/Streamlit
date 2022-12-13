@@ -28,7 +28,7 @@ st.subheader(
 col1, col2, col3 = st.beta_columns(3)
 with col1:
    st.header("아메리카노")
-   st.image("https://img.freepik.com/premium-photo/iced-americano-coffee-in-a-glass-on-a-bar-in-a-cafe_213396-398.jpg", use_column_width=True)
+   st.image("https://t1.daumcdn.net/cfile/tistory/9917603D5AF3A2E024", use_column_width=True)
 
 with col2:
    st.header("바닐라라떼")
