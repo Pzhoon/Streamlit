@@ -6,10 +6,11 @@ import seaborn as sns
 import plotly.express as px
 
 st.title(
-    """강원랜드 무인AI커피머신 판매량"""
+    """강원랜드 무인AI커피머신 판매량
+    """
     )
 st.subheader(
-    "12월 총 판매량"
+    "   12월 총 판매량"
 )
 
 df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
