@@ -45,8 +45,8 @@ st.header(
 )
 col4, col5, col6 = st.columns(3)
 with col4:
-   st.header("1.아메리카노")
-   st.image("https://health.chosun.com/site/data/img_dir/2022/05/11/2022051101651_0.jpg")
+   st.header("1.그린티라떼")
+   st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt0MkgkF0fpSWfxoxWky90vkS7z5tQm4zDhsNyo4Yy1fE6ZWBVQ7zjdcCpk2AcVrBRtcc&usqp=CAU")
 
 with col5:
    st.header("2.바닐라라떼")
