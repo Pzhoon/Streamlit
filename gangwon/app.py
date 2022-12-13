@@ -9,7 +9,7 @@ st.title(
     """강원랜드 무인커피 판매량"""
     )
 st.subheader(
-    ""12월 총 판매량""
+    *12월 총 판매량
 )
 # gangwon = sns.load_dataset('gangwon')
 df = pd.read_csv('./gangwon/gangwon.csv')
