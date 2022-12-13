@@ -17,6 +17,8 @@ for idx, col in enumerate(columns):
     for idx2 in range(4):
         # key가 겹치면 안 됨
         col.text_input(f"조 추첨 대상 {idx+1 + idx2 * 4}", key=f"{idx+1 + idx2 * 4}")
+st.write(st.session_state)
+
 st.text_input("추첨 대상자")
 # 13명이 소속될 조 이름을 넣을 위치
 
