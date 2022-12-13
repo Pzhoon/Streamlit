@@ -23,12 +23,12 @@ fig2 = px.histogram(gangwon1225, x="상품명", y='판매수량',title='크리�
 st.plotly_chart(fig2)
 
 # 판매량 베스트3
-st.subheader(
+st.header(
     "Best 3"
 )
 col1, col2, col3 = st.columns(3)
 with col1:
-   st.header("아메리카노")
+   st.header("1.아메리카노")
    st.image("https://health.chosun.com/site/data/img_dir/2022/05/11/2022051101651_0.jpg")
 
 with col2:
@@ -38,3 +38,4 @@ with col2:
 with col3:
 	st.header("3.카페라떼")
 	st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
+
