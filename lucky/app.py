@@ -12,7 +12,7 @@ st.header("게임을 시작하지")
 # 열을 배치하는 메소드
 columns = st.columns(4)
 # col1, col2, col3, col4
-for idx, col in enumerate(colums):
+for idx, col in enumerate(columns):
     # col.text_text_input(f"추첨 대상자 {idx+1}", key=idx")
     for idx2 in range(4):
         # key가 겹치면 안 됨
