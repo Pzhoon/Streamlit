@@ -43,7 +43,7 @@ if st.button('추첨 시작'):
     n_data = ss2[n_idx]
 # st.write(n_data)
 
-    g_idx - ss2.index.str.contains("g")
+    g_idx = ss2.index.str.contains("g")
     g_data = ss2[g_idx]
 # st.write(g_data)
 
