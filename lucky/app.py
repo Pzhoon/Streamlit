@@ -1,12 +1,15 @@
 # streamlit 라이브러리 호출
 import streamlit as st
 import numpy as np
+import pandas as pd
 
 # st.write() 마크다운
 st.title("조추첨 페이지")
 st.header("게임을 시작하지")
 # https://docs.streamlit.io/library/cheatsheet
 st.image("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60")
+#st.image("./lucky/xx.jpg")
+
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
 # 3 x 4 (row, col)
 # 열을 배치하는 메소드
@@ -34,6 +37,10 @@ ss = pd.Series(st.session_state)
 
 ss2 = ss[ss.ne("")]
 st.write(ss2)
+n_idx = ss2.index.str.contains("n")
+n_data = ss2[n_idx]
+st.write(n_data)
 
+g_idx - ss2.index.str.sontains("g")
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
