@@ -30,7 +30,7 @@ for idx, col in enumerate(columns2):
         # key가 겹치면 안 됨
         col.text_input(f"조 추첨 대상 {idx+1 + idx2 * 4}", key=f"g{idx+1 + idx2 * 4}")
 ss = pd.Series(st.session_state)
-st.write(ss)
+# st.write(ss)
 
 ss2 = ss[ss.ne("")]
 st.write(ss2)
