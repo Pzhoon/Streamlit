@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
+
 st.title(
     """강원랜드 무인AI커피머신 판매량"""
     )
@@ -25,7 +26,7 @@ st.plotly_chart(fig2)
 st.subheader(
     "Best 3"
 )
-col1, col2, col3 = st.metric_columns(3)
+col1, col2, col3 = st.columns(3)
 with col1:
    st.header("아메리카노")
    st.image("https://health.chosun.com/site/data/img_dir/2022/05/11/2022051101651_0.jpg")
