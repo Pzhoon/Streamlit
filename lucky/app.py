@@ -6,7 +6,7 @@ import numpy as np
 st.title("조추첨 페이지")
 st.header("게임을 시작하지")
 # https://docs.streamlit.io/library/cheatsheet
-st.image("https://images.unsplash.com/photo-1641850162469-a43522ec710e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGRpY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60")
+st.image("https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60")
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
 # 3 x 4 (row, col)
 # 열을 배치하는 메소드
