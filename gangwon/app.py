@@ -18,3 +18,6 @@ gangwon12 = df.iloc[4588:5129]
 
 fig1 = px.histogram(gangwon12, x="상품명", y='판매수량',title='메뉴별 판매량' )
 st.plotly_chart(fig1)
+fig2 = px.histogram(gangwon1225, x="상품명", y='판매수량',title='메뉴별 판매량' )
+st.plotly_chart(fig2)
+
