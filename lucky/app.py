@@ -59,5 +59,5 @@ if st.button('추첨 시작'):
     "조 이름": g_rd,
 })
 # st.balloons()
-st.snow()
-st.write(df)
+    st.dice()
+    st.write(df)
