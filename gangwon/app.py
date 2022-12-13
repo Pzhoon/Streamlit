@@ -12,7 +12,8 @@ st.subheader(
     "12월 총 판매량"
 )
 # gangwon = sns.load_dataset('gangwon')
-df = pd.read_csv('./gangwon/gangwon.csv')
+df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
+gangwon1225 = df.iloc[5000:5020]
 
 fig = plt.figure(figsize=(6, 3))
 gangwon['영업일자'] = 
