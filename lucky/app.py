@@ -12,6 +12,8 @@ st.header("게임을 시작하지")
 # 열을 배치하는 메소드
 columns - st.columns(4)
 # col1, col2, col3, col4
+for idx, col in enumerate(colums):
+    col.text_text_input
 st.text_input("추첨 대상자")
 # 13명이 소속될 조 이름을 넣을 위치
 
