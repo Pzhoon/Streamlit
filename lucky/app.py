@@ -38,7 +38,7 @@ ss = pd.Series(st.session_state)
 # st.write(ss)
 
 ss2 = ss[ss.ne("")]
-st.write(ss2)
+#st.write(ss2)
 n_idx = ss2.index.str.contains("n")
 n_data = ss2[n_idx]
 # st.write(n_data)
