@@ -10,7 +10,7 @@ st.header("게임을 시작하지")
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
 # 3 x 4 (row, col)
 # 열을 배치하는 메소드
-columns - st.columns(4)
+columns = st.columns(4)
 # col1, col2, col3, col4
 for idx, col in enumerate(colums):
     # col.text_text_input(f"추첨 대상자 {idx+1}", key=idx")
