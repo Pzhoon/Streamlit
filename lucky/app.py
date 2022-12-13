@@ -1,14 +1,11 @@
 # streamlit 라이브러리 호출
 import streamlit as st
+import numpy as np
 
-# 마크다운을 기반으로 한 꾸미기 기능 작동
-st.write(
-    """
-    # 제 첫 웹페이지 일까? 아닐까? 였어!
-    * 1쿠쉬쿠쉬 = 1$
-    """
-    )
+# st.write() 마크다운
+st.title("조추첨 페이지")
+# 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
+# 13명이 소속될 조 이름을 넣을 위치
 
-st.image(
-    "https://images.unsplash.com/photo-1597019558926-3eef445fdf60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2thdGVib2FyZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-)
+# <추첨 버튼>
+# 13개의 짝을 지어서 표시해줄 그래픽
