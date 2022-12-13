@@ -10,7 +10,7 @@ st.title(
     )
 st.subheader(
     "12월 총 판매량"
-)
+    )
 
 df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
 gangwon1225 = df.iloc[5000:5020]
