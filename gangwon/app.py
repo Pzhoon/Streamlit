@@ -21,7 +21,7 @@ fig1 = px.histogram(gangwon12, x="상품명", y='판매수량',title='12월 판�
 st.plotly_chart(fig1)
 # fig1 = px.line(temp_df, values='판매수량', names='영업일자',
 #              color_discrete_sequence=px.colors.qualitative.Antique)
-fig1 = px.scatter(gangwon12, x="영업일자", y='판매수량',title='12월 판매량' )
+fig1 = px.line(gangwon12, x="영업일자", y='판매수량',title='12월 판매량' )
 st.plotly_chart(fig1)
 fig2 = px.histogram(gangwon1225, x="상품명", y='판매수량',title='크리스마스 판매량' )
 st.plotly_chart(fig2)
