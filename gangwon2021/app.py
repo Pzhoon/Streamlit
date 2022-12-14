@@ -7,8 +7,12 @@ import plotly.express as px
 
 
 st.title(
-    """강원랜드 무인AI커피머신 판매량"""
+    """강원랜드 인공지능 AI 빅데이터 기반 Data Analysis & Data Visualization Project"""
     )
+
+st.subheader("""
+강원랜드_호텔 인공지능 무인카페 이용현황
+""")
 
 def main() :
 
