@@ -9,16 +9,57 @@ import plotly.express as px
 st.title(
     """강원랜드 무인AI커피머신 판매량"""
     )
-st.subheader(
-    "12월 총 판매량"
-    )
+
+def main() :
+
+    cof = ['CHOICE','아메리카노','카페라떼','흑당라떼','초코라떼','스위티자몽','바닐라라떼','아이스티','자두주스','청포도주스','카페모카','카푸치노','그린티라떼']
+    choice = st.selectbox('귀하가 선호하는 카페 음료는 무엇입니까?', cof)
+
+    if choice == cof[1] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 첫번째로 많이 팔렸어요 ")
+    elif choice == cof[2] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 두번째로 많이 팔렸어요")
+    elif choice == cof[3] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 여덟번째로 많이 팔렸어요.")
+    elif choice == cof[4] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 다섯번째로 많이 팔렸어요.")
+    elif choice == cof[5] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 여섯번째로 많이 팔렸어요.")
+    elif choice == cof[6] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 세번째로 많이 팔렸어요.")
+    elif choice == cof[7] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 아홉번째로 많이 팔렸어요.")
+    elif choice == cof[8] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 열번째로 많이 팔렸어요.")
+    elif choice == cof[9] :
+        st.balloons()
+        st.write("# 당신이 고른 음료는 네번째로 많이 팔렸어요.")  
+    elif choice == cof[10] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 일곱번째로 많이 팔렸어요.")
+    elif choice == cof[11] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 열한번째로 많이 팔렸어요.")
+    elif choice == cof[-1] :
+        st.snow()
+        st.write("# 당신이 고른 음료는 열두번째로 많이 팔렸어요.")
+
+
+if __name__ == '__main__' :
+    main()
 
 def main():
     df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
-    two = df.iloc[4588:5129]
-
     if st.button('데이터 보기'):
-        st.dataframe(two)
+        st.dataframe(df)
 
 if __name__ == '__main__' :
     main()
