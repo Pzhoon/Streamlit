@@ -32,7 +32,7 @@ plt.tight_layout()
 
 fig2 = px.histogram(gangwon1225, x="상품명", y='판매수량',title='크리스마스 판매량')
 st.plotly_chart(fig2)
-plt.tight_layout()
+plt.tight_layout(h_pad=5, w_pad=8)
 # fig.show()
 
 # 판매량 베스트3
