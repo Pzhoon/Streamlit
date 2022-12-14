@@ -13,26 +13,26 @@ st.subheader(
     "12월 총 판매량"
     )
 
+st.sidebar.header('2021년 판매량')
+name = st.sidebar.selectbox('분기별 판매량', ['전체','1분기','2분기','3분기','4분기'])
+
 df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
 gangwon1225 = df.iloc[5000:5020]
 gangwon12 = df.iloc[4588:5129]
+first = df.iloc[:627]
+second = df.iloc[627:1976]
+third = df.iloc[1976:3518]
+forth = df.iloc[3518:]
+
 
 fig1 = px.histogram(gangwon12, x="상품명", y='판매수량',title='12월 판매량')
 st.plotly_chart(fig1)
-plt.tight_layout()
-# fig1 = px.line(temp_df, values='판매수량', names='영업일자',
-#              color_discrete_sequence=px.colors.qualitative.Antique)
-fig1 = px.data.gapminder()
-fig = px.line(df, x="영업일자", y="판매수량", title='12월 판매량')
-plt.tight_layout()
-
+#fig1 = px.data.gapminder()
+#fig = px.line(df, x="영업일자", y="판매수량", title='12월 판매량')
 fig1 = px.line(gangwon12, x="영업일자", y='판매수량',title='12월 판매량')
 st.plotly_chart(fig1)
-plt.tight_layout()
-
 fig2 = px.histogram(gangwon1225, x="상품명", y='판매수량',title='크리스마스 판매량')
 st.plotly_chart(fig2)
-plt.tight_layout(h_pad=5, w_pad=8)
 # fig.show()
 
 # 판매량 베스트3
