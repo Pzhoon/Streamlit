@@ -13,6 +13,16 @@ st.subheader(
     "12월 총 판매량"
     )
 
+def main():
+    df = pd.read_csv('./cafe2/data.csv', encoding='cp949')
+    two = df.iloc[4588:5129]
+
+    if st.button('데이터 보기'):
+        st.dataframe(two)
+
+if __name__ == '__main__' :
+    main()
+
 st.sidebar.header('Menu')
 name = st.sidebar.selectbox('분기별 판매량', ['종류를 선택해주세요','1분기','2분기','3분기','4분기','전체'])
 
