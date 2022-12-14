@@ -14,7 +14,7 @@ st.subheader(
     )
 
 def main():
-    df = pd.read_csv('./cafe2/data.csv', encoding='cp949')
+    df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
     two = df.iloc[4588:5129]
 
     if st.button('데이터 보기'):
