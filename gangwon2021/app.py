@@ -66,7 +66,7 @@ if __name__ == '__main__' :
 def main():
     df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
     if st.checkbox('원본 데이터 보기'):
-        st.subheader('Raw data')
+        st.subheader('판매현황')
         st.write(df)
 
 if __name__ == '__main__' :
