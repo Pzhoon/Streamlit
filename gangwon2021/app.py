@@ -216,7 +216,7 @@ elif name == '전체':
     total_sum5 = df['판매수량'].sum()
     st.subheader(f"21년 총 판매량 {total_sum5}잔 입니다.")
 
-    fig_all = px.histogram(df, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 21년 총 음료 판매량' )
+    fig_all = px.histogram(df, x="상품명", y='판매수량',title='강원랜드 무인 카페 21년 총 음료 판매량' )
 
     st.plotly_chart(fig_all)
 
