@@ -16,10 +16,18 @@ st.subheader(
 st.sidebar.header('Menu')
 name = st.sidebar.selectbox('분기별 판매량', ['종류를 선택해주세요','1분기','2분기','3분기','4분기','전체'])
 
+df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
+gangwon1225 = df.iloc[5000:5020]
+gangwon12 = df.iloc[4588:5129]
+first = df.iloc[:627]
+second = df.iloc[627:1976]
+third = df.iloc[1976:3518]
+forth = df.iloc[3518:]
+
 if name == '1분기':
     total_sum1 = first['판매수량'].sum()
     st.subheader(f"1분기 총 판매량 {total_sum1}잔 입니다!!")
-    fig_first = px.histogram(first, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 1분기 음료 판매량' )
+    fig_first = px.histogram(first, x="상품명", y='판매수량',title='강원랜드 무인 카페 1분기 음료 판매량' )
 
     st.plotly_chart(fig_first)
 
@@ -47,7 +55,6 @@ if name == '1분기':
 
 
     st.write("## WORST 3")
-    st.write("### 쓰다!! ")
     col4, col5, col6 = st.columns(3)
     with col4:
         st.subheader("1.그린티라떼 ICE 19잔")
@@ -60,12 +67,13 @@ if name == '1분기':
     with col6:
 	    st.subheader("3.흑당라떼 HOT 28잔")
 	    st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
+
 elif name == '2분기':
 
     total_sum2 = second['판매수량'].sum()
     st.subheader(f"2분기 총 판매량 {total_sum2}잔 팔았습니다.")
 
-    fig_second = px.histogram(second, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 2분기 음료 판매량' )
+    fig_second = px.histogram(second, x="상품명", y='판매수량',title='강원랜드 무인 카페 2분기 음료 판매량' )
 
     st.plotly_chart(fig_second)
 
@@ -109,7 +117,7 @@ elif name == '3분기':
     total_sum3 = third['판매수량'].sum()
     st.subheader(f"3분기 총 판매량 {total_sum3}잔 팔았습니다.") 
     
-    fig_third = px.histogram(third, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 3분기 음료 판매량' )
+    fig_third = px.histogram(third, x="상품명", y='판매수량',title='강원랜드 무인 카페 3분기 음료 판매량' )
 
     st.plotly_chart(fig_third)
 
@@ -153,7 +161,7 @@ elif name == '4분기':
     total_sum4 = forth['판매수량'].sum()
     st.subheader(f"4분기 총 판매량 {total_sum4}잔 팔았습니다.")
 
-    fig_forth = px.histogram(forth, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 4분기 음료 판매량' )
+    fig_forth = px.histogram(forth, x="상품명", y='판매수량',title='강원랜드 무인 카페 4분기 음료 판매량' )
 
     st.plotly_chart(fig_forth)  
 
@@ -179,7 +187,6 @@ elif name == '4분기':
 	    st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
     
     st.write("## WORST 3")
-    st.write("### 쓰다!! ")
     col22, col23, col24 = st.columns(3)
     with col22:
         st.subheader("1.그린티라떼 HOT 106잔")
@@ -197,7 +204,7 @@ elif name == '4분기':
 
 elif name == '전체':
     total_sum5 = df['판매수량'].sum()
-    st.subheader(f"21년 총 판매량 {total_sum5}잔 팔았습니다.")
+    st.subheader(f"21년 총 {total_sum5}잔 팔았습니다.")
 
     fig_all = px.histogram(df, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 21년 총 음료 판매량' )
 
