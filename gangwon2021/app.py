@@ -19,7 +19,6 @@ name = st.sidebar.selectbox('분기별 판매량', ['종류를 선택해주세�
 if name == '1분기':
     total_sum1 = first['판매수량'].sum()
     st.subheader(f"1분기 총 판매량 {total_sum1}잔 입니다!!")
-    st.write(" ## 하루에 100잔 가량 팔립니다!! 놀라워요!")
     fig_first = px.histogram(first, x="상품명", y='판매수량',title='강원랜드의 한 무인 카페의 1분기 음료 판매량' )
 
     st.plotly_chart(fig_first)
@@ -92,7 +91,6 @@ elif name == '2분기':
 	    st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
     
     st.write("## WORST 3")
-    st.write("### 쓰다!! ")
     col10, col11, col12 = st.columns(3)
     with col10:
         st.subheader("1.그린티라떼 HOT 51잔")
@@ -119,7 +117,6 @@ elif name == '3분기':
 
     st.write("## HOT vs ICE")
     st.write("### 3분기의 승자는 ICE 입니다.")
-    st.write("### 여름이니까 아이스 커피~")
     fug3 = px.histogram(sample3, x="상품명", y='판매수량')
     st.plotly_chart(fug3)
 
@@ -138,7 +135,6 @@ elif name == '3분기':
 	    st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
     
     st.write("## WORST 3")
-    st.write("### 쓰다!! ")
     col16, col17, col18 = st.columns(3)
     with col16:
         st.subheader("1.그린티라떼 HOT 66잔")
@@ -211,7 +207,6 @@ elif name == '전체':
 
     st.write("## HOT vs ICE")
     st.write("### 21년의 승자는 ICE 입니다.")
-    st.write("### 한국인은 아아의 민족 입니다.")
 
 
     fug5 = px.histogram(sample5, x="상품명", y='판매수량')
@@ -232,7 +227,6 @@ elif name == '전체':
 	    st.image("https://www.the-cup.co.kr/data/editor/1902/thumb-687c8d0c78d329e0c637df3050b1fd20_1550129060_1108_920x843.jpg")
     
     st.write("## WORST 3")
-    st.write("### 쓰다!! ")
     col28, col29, col30 = st.columns(3)
     with col28:
         st.subheader("1.그린티라떼 HOT 246잔")
