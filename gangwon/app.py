@@ -13,8 +13,8 @@ st.subheader(
     "12월 총 판매량"
     )
 
-st.sidebar.header('2021년 판매량')
-name = st.sidebar.selectbox('분기별 판매량', ['전체','1분기','2분기','3분기','4분기'])
+# st.sidebar.header('Menu')
+# name = st.sidebar.selectbox('분기별 판매량', ['전체','1분기','2분기','3분기','4분기'])
 
 df = pd.read_csv('./gangwon/gangwon.csv', encoding='cp949')
 gangwon1225 = df.iloc[5000:5020]
